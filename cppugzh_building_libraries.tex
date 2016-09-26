@@ -1,0 +1,43 @@
+\documentclass[aspectratio=169,t]{beamer}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[outputdir=build]{minted}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{lcg}
+
+\setbeamertemplate{section in toc}{ \pause{}$\circ{}$ \inserttocsection{}\par{}}
+
+
+
+\captionsetup{labelformat=empty,labelsep=none}
+\graphicspath{{./images/}}
+\usetheme{metropolis}
+\setlist[itemize,1]{label=$\circ{}$,itemsep=2em}
+\setlist[itemize,2]{label=$\triangleright{}$,itemsep=0.5em}
+
+\title{Building reusable libraries}
+\subtitle{Without shooting yourself in the foot too badly}
+\date{September 28, 2016}
+\author{Felix Morgner}
+\subject{C++ Meetup Zürich}
+\institute[University of Applied Sciences Rapperswil]{Institute for Software\\University of Applied Sciences Rapperswil}
+
+\begin{document}
+  \maketitle
+  \section*{Agenda}
+
+  \begin{frame}
+    \frametitle{What will we be talking about}
+    \pause{}
+    \tableofcontents
+  \end{frame}
+
+  \input{sections/hiding_secrets}
+  \input{sections/quick_review}
+  \input{sections/crossing_boundaries}
+  \input{sections/summary}
+  \input{sections/references}
+
+\end{document}

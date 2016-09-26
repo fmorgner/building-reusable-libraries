@@ -1,0 +1,44 @@
+\section{Summary}
+
+\begin{frame}[c]
+  \frametitle{Summing up}
+  \pause{}
+  \begin{itemize}
+    \item{The C++ ABI is not stable}\pause{}
+    \item{Neither is it "compatible"}\pause{}
+    \item{C tends to be very stable}\pause{}
+    \item{But hard to get right}\pause{}
+    \item{Other languages can use C libraries}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+  \frametitle{What I did not tell you}
+  \pause{}
+  \begin{itemize}
+    \item{Tools can do the heavy lifting}\pause{}
+    \item{Some languages provide their own tools}\pause{}
+    \item{SWIG supports a lot of languages}\pause{}
+    \item{You do not need C++ on the bottom-end}\pause{}
+      \begin{itemize}
+        \item{\url{https://github.com/dns2utf8/hour_glass}}
+        \item{Uses Rust on the bottom-end}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+  \frametitle{std::terminate()}
+  \only<1>{
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=-4.5cm,yshift=-6cm] at (current page.north east) {\includegraphics[width=4cm]{fancy_gopher}};
+    \node[xshift=-8.5cm,yshift=-5cm] at (current page.north east) {\includegraphics[width=4cm]{fancy_sloth}};
+    \node[xshift=-2.5cm,yshift=-3cm] at (current page.north east) {\includegraphics[width=4cm]{unicorn}};
+    \node[xshift=-13.5cm,yshift=-4cm] at (current page.north east) {\includegraphics[width=4cm]{fancy_doge}};
+  \end{tikzpicture}
+}
+  \only<2>{
+    \centering{\Huge{Thank You!}}
+  }
+\end{frame}
+

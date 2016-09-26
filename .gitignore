@@ -1,0 +1,7 @@
+build
+obj
+bin
+lib
+log
+*.pdf
+*.d
